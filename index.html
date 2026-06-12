@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Glassmorphic Web Portfolio</title>
+  <!-- Google Fonts: Outfit and Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Baseline Stylesheet -->
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+
+  <!-- Aurora Radial Gradients for Background Aesthetics -->
+  <div class="aurora aurora-1"></div>
+  <div class="aurora aurora-2"></div>
+  <div class="aurora aurora-3"></div>
+
+  <!-- Scroll Container for Lenis Smooth Scroll -->
+  <div id="scroll-container">
+    
+    <!-- Hero Section -->
+    <section id="hero" class="section">
+      <div class="container hero-content">
+        <span class="badge">Available for Work</span>
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Alex Rivera</span>
+        </h1>
+        <p class="hero-subtitle">
+          I build high-performance web applications with <span class="highlight-text">immersive animations</span> and <span class="highlight-text">pixel-perfect layouts</span>.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title"><span class="gradient-text">About Me</span></h2>
+        <div class="about-grid">
+          <div class="about-bio glass-panel">
+            <p>
+              I am a creative frontend developer and designer specialized in crafting premium digital experiences. Leveraging cutting-edge technologies like Vite, GSAP, and custom styling architectures, I translate complex design specs into robust, accessible, and high-performance interactive interfaces.
+            </p>
+            <p>
+              My design philosophy revolves around clean layouts, micro-interactions, responsive adaptability, and maintaining smooth scroll rates (>50 FPS) to guarantee optimal user experience on all devices.
+            </p>
+          </div>
+          <div class="about-skills glass-panel">
+            <h3>Tech Stack</h3>
+            <div class="skills-grid">
+              <div class="skill-tag">HTML5 / CSS3</div>
+              <div class="skill-tag">JavaScript (ES6+)</div>
+              <div class="skill-tag">Vite</div>
+              <div class="skill-tag">GSAP / ScrollTrigger</div>
+              <div class="skill-tag">Lenis Scroll</div>
+              <div class="skill-tag">Git & GitHub</div>
+              <div class="skill-tag">Responsive Design</div>
+              <div class="skill-tag">Tailwind / Custom CSS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title"><span class="gradient-text">Selected Projects</span></h2>
+        <div class="projects-grid">
+          
+          <!-- Project Card 1 -->
+          <div class="project-card glass-panel">
+            <div class="project-glow"></div>
+            <div class="project-card-content">
+              <span class="project-category">Web Application</span>
+              <h3 class="project-card-title">Nova Dashboard</h3>
+              <p class="project-card-description">
+                A premium administrative console featuring high-density real-time telemetry datasets and interactive glassmorphic data visualizers.
+              </p>
+              <div class="project-tags">
+                <span>Vite</span>
+                <span>JavaScript</span>
+                <span>GSAP</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="project-card glass-panel">
+            <div class="project-glow"></div>
+            <div class="project-card-content">
+              <span class="project-category">Creative Frontend</span>
+              <h3 class="project-card-title">Aether Landing Page</h3>
+              <p class="project-card-description">
+                A landing page for a fictional spatial discovery agency, styled with CSS grid, custom variables, and full-screen smooth parallax.
+              </p>
+              <div class="project-tags">
+                <span>HTML/CSS</span>
+                <span>Lenis</span>
+                <span>Parallax</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="project-card glass-panel">
+            <div class="project-glow"></div>
+            <div class="project-card-content">
+              <span class="project-category">Design System</span>
+              <h3 class="project-card-title">Aura UI Kit</h3>
+              <p class="project-card-description">
+                A production-ready UI collection featuring glassmorphic components, accessible controls, and seamless responsive design structures.
+              </p>
+              <div class="project-tags">
+                <span>CSS custom props</span>
+                <span>Design system</span>
+                <span>A11y</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-box glass-panel">
+          <h2 class="section-title"><span class="gradient-text">Let's Collaborate</span></h2>
+          <p class="contact-subtitle">
+            Have an exciting project or want to learn more about my work? Feel free to reach out directly.
+          </p>
+          <div class="contact-actions">
+            <a href="mailto:alex@example.com" class="btn btn-primary">Send Email</a>
+            <div class="social-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Floating Bottom macOS-style Dock Navigation -->
+  <nav class="dock" aria-label="Main Navigation">
+    <div class="dock-container">
+      <a href="#hero" class="dock-item active" data-section="hero">
+        <svg class="dock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+        <span class="dock-tooltip">Home</span>
+      </a>
+      <a href="#about" class="dock-item" data-section="about">
+        <svg class="dock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+          <circle cx="12" cy="7" r="4"/>
+        </svg>
+        <span class="dock-tooltip">About</span>
+      </a>
+      <a href="#projects" class="dock-item" data-section="projects">
+        <svg class="dock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect width="18" height="18" x="3" y="3" rx="2" ry="2"/>
+          <line x1="9" x2="15" y1="9" y2="9"/>
+          <line x1="9" x2="15" y1="13" y2="13"/>
+          <line x1="9" x2="13" y1="17" y2="17"/>
+        </svg>
+        <span class="dock-tooltip">Projects</span>
+      </a>
+      <a href="#contact" class="dock-item" data-section="contact">
+        <svg class="dock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect width="20" height="16" x="2" y="4" rx="2"/>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        <span class="dock-tooltip">Contact</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Script entry point -->
+  <script type="module" src="./src/main.js"></script>
+
+</body>
+</html>
