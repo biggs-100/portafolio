@@ -15,3 +15,7 @@
 ## Animations & Scroll
 - Synchronize animations cleanly with GSAP and Lenis scroll controllers.
 - Monitor repaint costs to keep scroll performance >= 50 FPS.
+
+## Skills
+
+- `professional-web-design` — Transform amateur AI-generated websites into professional-grade designs. Intentional hierarchy, restrained palette, UX-first principles. Located at `skills/professional-web-design/SKILL.md`.
