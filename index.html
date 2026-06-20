@@ -3,373 +3,156 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Premium Glassmorphic Web Portfolio</title>
-  <!-- Google Fonts: Outfit and Inter -->
+  <title>BiggZ — Software Engineer &amp; DSP Developer</title>
+  <!-- Google Fonts: Fraunces (variable serif, SOFT + WONK axes) + DM Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <!-- Baseline Stylesheet -->
-  <script type="module" crossorigin src="/portafolio/assets/index-BdjMvR0U.js"></script>
-  <link rel="stylesheet" crossorigin href="/portafolio/assets/index-Cx9KxeRr.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300..700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/portafolio/assets/index-Kk88lyA2.js"></script>
+  <link rel="stylesheet" crossorigin href="/portafolio/assets/index-6CS23cqU.css">
 </head>
 <body>
 
-  <!-- Aurora Radial Gradients for Background Aesthetics -->
-  <div class="aurora aurora-1"></div>
-  <div class="aurora aurora-2"></div>
-  <div class="aurora aurora-3"></div>
+  <!-- Skip-to-content link — first DOM node -->
+  <a href="#main-content" class="skip-link">Skip to content</a>
 
-  <!-- Scroll Container for Lenis Smooth Scroll -->
-  <div id="scroll-container">
-    
+  <main id="main-content">
+
     <!-- Hero Section -->
-    <section id="hero" class="section">
-      <div class="container hero-content">
-        <span class="badge">Available for Work</span>
-        <h1 class="hero-title">
-          Hi, I'm <span class="gradient-text">BiggZ</span>
-        </h1>
-        <p class="hero-subtitle">
-          I build high-performance desktop applications, audio plugins, and web systems with <span class="highlight-text">immersive visuals</span> and <span class="highlight-text">pixel-perfect layouts</span>.
-        </p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+    <section id="hero" aria-label="Introduction">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Hi, I'm BiggZ</h1>
+          <p>I build high-performance desktop applications, audio plugins, and web systems with clean architecture and intentional design.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- About Me Section -->
-    <section id="about" class="section">
+    <!-- About Section -->
+    <section id="about" aria-label="About me">
       <div class="container">
-        <h2 class="section-title"><span class="gradient-text">About Me</span></h2>
-        <div class="about-bento">
-          <!-- Profile Card (occupies 8 columns wide, 2 rows high) -->
-          <div class="bento-card bento-profile glass-panel">
-            <div class="bento-card-content">
-              <span class="bento-subtitle">Who I Am</span>
-              <h3 class="bento-title">BiggZ</h3>
-              <p class="bento-description">
-                I am a Software Engineer & DSP Developer dedicated to engineering premium desktop applications and immersive digital environments. 
-                Merging low-level computational efficiency with custom interactive animations, I build high-fidelity interfaces that maintain high performance and responsive fluidity.
-              </p>
-              <p class="bento-description">
-                My work spans real-time audio digital signal processing (DSP), OpenGL rendering architectures, and optimized web layouts. 
-                I strive to keep frame rates above 60 FPS, ensuring seamless micro-interactions on any screen.
-              </p>
-            </div>
+        <h2 class="section-title">About</h2>
+        <div class="about-card">
+          <div class="about-text">
+            <p>I'm a Software Engineer &amp; DSP Developer focused on building premium desktop applications and digital tools. My work spans real-time audio processing, rendering architectures, and full-stack web development — always with performance and clarity in mind.</p>
+            <p>I care deeply about architecture, clean interfaces, and systems that feel good to use. Every project I ship is built with intention, from the rendering pipeline to the last pixel.</p>
           </div>
-
-          <!-- Quick Stats Card (occupies 4 columns wide, 1 row high) -->
-          <div class="bento-card bento-stats glass-panel">
-            <div class="bento-card-content">
-              <h3 class="bento-title">Quick Stats</h3>
-              <div class="stats-container">
-                <div class="stat-item">
-                  <span class="stat-number gradient-text">5+</span>
-                  <span class="stat-label">Years Experience</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-number gradient-text">60 FPS</span>
-                  <span class="stat-label">Visual Performance</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-number gradient-text">12+</span>
-                  <span class="stat-label">Desktop Apps</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Socials/Connect Card (occupies 4 columns wide, 1 row high) -->
-          <div class="bento-card bento-social glass-panel">
-            <div class="bento-card-content">
-              <h3 class="bento-title">Connect</h3>
-              <p class="bento-description" style="margin-bottom: 8px;">Let's collaborate on your next digital or desktop venture.</p>
-              <div class="socials-grid">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="bento-social-link">
-                  <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
-                    <path d="M9 18c-4.51 2-5-2-7-2"/>
-                  </svg>
-                  <span>GitHub</span>
-                </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="bento-social-link">
-                  <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                    <rect width="4" height="12" x="2" y="9"/>
-                    <circle cx="4" cy="4" r="2"/>
-                  </svg>
-                  <span>LinkedIn</span>
-                </a>
-                <a href="mailto:biggz@example.com" class="bento-social-link">
-                  <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect width="20" height="16" x="2" y="4" rx="2"/>
-                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-                  </svg>
-                  <span>Email</span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tech Stack Card (occupies 12 columns wide, 1 row high) -->
-          <div class="bento-card bento-tech glass-panel">
-            <div class="bento-card-content">
-              <h3 class="bento-title">Tech Stack</h3>
-              <p class="bento-description">Core technologies I use to build robust desktop plugins, 3D renderers, and modern web solutions.</p>
-              <div class="skills-grid" style="margin-top: 12px;">
-                <div class="skill-tag">C++20</div>
-                <div class="skill-tag">Rust</div>
-                <div class="skill-tag">SolidJS</div>
-                <div class="skill-tag">React</div>
-                <div class="skill-tag">JUCE</div>
-                <div class="skill-tag">Tauri 2.0</div>
-                <div class="skill-tag">OpenGL</div>
-                <div class="skill-tag">SQLite</div>
-                <div class="skill-tag">Git</div>
-              </div>
-            </div>
-          </div>
+          <ul class="skills-list">
+            <li class="skill-tag">C++20</li>
+            <li class="skill-tag">Rust</li>
+            <li class="skill-tag">SolidJS</li>
+            <li class="skill-tag">React</li>
+            <li class="skill-tag">JUCE</li>
+            <li class="skill-tag">Tauri 2.0</li>
+            <li class="skill-tag">OpenGL</li>
+            <li class="skill-tag">SQLite</li>
+            <li class="skill-tag">Git</li>
+          </ul>
         </div>
       </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section">
+    <section id="projects" aria-label="Selected projects">
       <div class="container">
-        <h2 class="section-title"><span class="gradient-text">Selected Projects</span></h2>
+        <h2 class="section-title">Projects</h2>
         <div class="projects-grid">
-          
-          <!-- Project Card 1: Biggz Spectrum Analyzer -->
-          <div class="project-card glass-panel">
-            <div class="project-glow"></div>
-            <div class="project-card-content">
-              <span class="project-category">Audio DSP Software</span>
-              
-              <!-- High-fidelity Spectrum SVG Visual Showcase -->
-              <div class="project-visual">
-                <svg class="project-svg fft-svg" viewBox="0 0 240 120" width="100%" height="120" xmlns="http://www.w3.org/2000/svg">
-                  <defs>
-                    <linearGradient id="fft-grad" x1="0%" y1="100%" x2="0%" y2="0%">
-                      <stop offset="0%" stop-color="var(--accent-purple)" />
-                      <stop offset="50%" stop-color="var(--accent-blue)" />
-                      <stop offset="100%" stop-color="var(--accent-cyan)" />
-                    </linearGradient>
-                  </defs>
-                  <!-- Background Grid -->
-                  <g stroke="rgba(255, 255, 255, 0.05)" stroke-width="1">
-                    <line x1="0" y1="20" x2="240" y2="20" />
-                    <line x1="0" y1="50" x2="240" y2="50" />
-                    <line x1="0" y1="80" x2="240" y2="80" />
-                    <line x1="0" y1="110" x2="240" y2="110" />
-                    <line x1="40" y1="0" x2="40" y2="120" />
-                    <line x1="80" y1="0" x2="80" y2="120" />
-                    <line x1="120" y1="0" x2="120" y2="120" />
-                    <line x1="160" y1="0" x2="160" y2="120" />
-                    <line x1="200" y1="0" x2="200" y2="120" />
-                  </g>
-                  <!-- Spectrum bars -->
-                  <rect class="fft-bar bar-1" x="15" y="20" width="12" height="90" rx="3" fill="url(#fft-grad)" />
-                  <rect class="fft-bar bar-2" x="33" y="30" width="12" height="80" rx="3" fill="url(#fft-grad)" />
-                  <rect class="fft-bar bar-3" x="51" y="15" width="12" height="95" rx="3" fill="url(#fft-grad)" />
-                  <rect class="fft-bar bar-4" x="69" y="45" width="12" height="65" rx="3" fill="url(#fft-grad)" />
-                  <rect class="fft-bar bar-5" x="87" y="25" width="12" height="85" rx="3" fill="url(#fft-grad)" />
-                  <rect class="fft-bar bar-6" x="105" y="10" width="12" height="100" rx="3" fill="url(#fft-grad)" />
-                  <rect class="fft-bar bar-7" x="123" y="35" width="12" height="75" rx="3" fill="url(#fft-grad)" />
-                  <rect class="fft-bar bar-8" x="141" y="50" width="12" height="60" rx="3" fill="url(#fft-grad)" />
-                  <rect class="fft-bar bar-9" x="159" y="20" width="12" height="90" rx="3" fill="url(#fft-grad)" />
-                  <rect class="fft-bar bar-10" x="177" y="15" width="12" height="95" rx="3" fill="url(#fft-grad)" />
-                  <rect class="fft-bar bar-11" x="195" y="40" width="12" height="70" rx="3" fill="url(#fft-grad)" />
-                  <rect class="fft-bar bar-12" x="213" y="30" width="12" height="80" rx="3" fill="url(#fft-grad)" />
-                </svg>
-              </div>
 
-              <h3 class="project-card-title">Biggz Spectrum Analyzer</h3>
-              <p class="project-card-description">
-                Real-time digital signal processing application visualizing multichannel audio frequencies with low-latency rendering and precise spectral analysis.
-              </p>
-              <div class="project-tags">
-                <span>C++20</span>
-                <span>JUCE</span>
-                <span>OpenGL</span>
-                <span>DSP</span>
-              </div>
-            </div>
-          </div>
+          <article class="project-card">
+            <h3>Spectrum Analyzer</h3>
+            <p>Real-time multichannel audio spectrum analyzer built with C++20 and JUCE. Low-latency FFT processing with OpenGL-accelerated rendering.</p>
+            <ul class="project-tags">
+              <li>C++20</li>
+              <li>JUCE</li>
+              <li>OpenGL</li>
+              <li>DSP</li>
+            </ul>
+          </article>
 
-          <!-- Project Card 2: AguaPotable v3 -->
-          <div class="project-card glass-panel">
-            <div class="project-glow"></div>
-            <div class="project-card-content">
-              <span class="project-category">Municipal CRM & Billing</span>
-              
-              <!-- High-fidelity Dashboard SVG Visual Showcase -->
-              <div class="project-visual">
-                <svg class="project-svg crm-svg" viewBox="0 0 240 120" width="100%" height="120" xmlns="http://www.w3.org/2000/svg">
-                  <defs>
-                    <linearGradient id="chart-area-grad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stop-color="var(--accent-cyan)" stop-opacity="0.4" />
-                      <stop offset="100%" stop-color="var(--accent-cyan)" stop-opacity="0.0" />
-                    </linearGradient>
-                  </defs>
-                  
-                  <!-- Window Frame Chrome -->
-                  <rect x="0" y="0" width="240" height="120" rx="8" fill="#161b22" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
-                  <path d="M0 16 H240" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
-                  <circle cx="10" cy="8" r="3" fill="#ff5f56" />
-                  <circle cx="18" cy="8" r="3" fill="#ffbd2e" />
-                  <circle cx="26" cy="8" r="3" fill="#27c93f" />
-                  
-                  <!-- Dashboard Grid -->
-                  <g stroke="rgba(255, 255, 255, 0.03)" stroke-width="1">
-                    <line x1="10" y1="36" x2="230" y2="36" />
-                    <line x1="10" y1="56" x2="230" y2="56" />
-                    <line x1="10" y1="76" x2="230" y2="76" />
-                    <line x1="10" y1="96" x2="230" y2="96" />
-                  </g>
-                  
-                  <!-- Area fill under line chart -->
-                  <path d="M 20 100 L 20 80 Q 55 45 90 70 T 160 40 Q 195 75 220 50 L 220 100 Z" fill="url(#chart-area-grad)" />
-                  
-                  <!-- Glowing Chart Line -->
-                  <path class="crm-chart-line" d="M 20 80 Q 55 45 90 70 T 160 40 Q 195 75 220 50" fill="none" stroke="var(--accent-cyan)" stroke-width="2.5" stroke-linecap="round" />
-                  
-                  <!-- Interactive Dots -->
-                  <circle class="crm-dot dot-1" cx="20" cy="80" r="3" fill="var(--text-primary)" stroke="var(--accent-cyan)" stroke-width="1.5" />
-                  <circle class="crm-dot dot-2" cx="90" cy="70" r="3" fill="var(--text-primary)" stroke="var(--accent-cyan)" stroke-width="1.5" />
-                  <circle class="crm-dot dot-3" cx="160" cy="40" r="3" fill="var(--text-primary)" stroke="var(--accent-cyan)" stroke-width="1.5" />
-                  <circle class="crm-dot dot-4" cx="220" cy="50" r="3" fill="var(--text-primary)" stroke="var(--accent-cyan)" stroke-width="1.5" />
+          <article class="project-card">
+            <h3>AguaPotable v3</h3>
+            <p>Enterprise municipal billing and CRM console. Tracks consumption metrics, ledger transactions, and automated invoice delivery pipelines.</p>
+            <ul class="project-tags">
+              <li>Rust</li>
+              <li>SolidJS</li>
+              <li>SQLite</li>
+              <li>Tauri 2.0</li>
+            </ul>
+          </article>
 
-                  <!-- Status Badge Pills -->
-                  <!-- Badge 1: PAID (Green) -->
-                  <g transform="translate(140, 80)">
-                    <rect x="0" y="0" width="38" height="14" rx="7" fill="rgba(39, 201, 63, 0.15)" stroke="rgba(39, 201, 63, 0.4)" stroke-width="1" />
-                    <text x="19" y="10" font-family="var(--font-secondary)" font-size="7" font-weight="700" fill="#27c93f" text-anchor="middle">PAID</text>
-                  </g>
-                  <!-- Badge 2: PENDING (Yellow) -->
-                  <g transform="translate(185, 80)">
-                    <rect x="0" y="0" width="45" height="14" rx="7" fill="rgba(255, 189, 46, 0.15)" stroke="rgba(255, 189, 46, 0.4)" stroke-width="1" />
-                    <text x="22.5" y="10" font-family="var(--font-secondary)" font-size="7" font-weight="700" fill="#ffbd2e" text-anchor="middle">PENDING</text>
-                  </g>
-                </svg>
-              </div>
-
-              <h3 class="project-card-title">AguaPotable v3</h3>
-              <p class="project-card-description">
-                Enterprise-grade municipal billing console tracking telemetry consumption metrics, ledger transactions, and automated invoice delivery pipelines.
-              </p>
-              <div class="project-tags">
-                <span>Rust</span>
-                <span>SolidJS</span>
-                <span>SQLite</span>
-                <span>Tauri 2.0</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project Card 3: MetradosPro -->
-          <div class="project-card glass-panel">
-            <div class="project-glow"></div>
-            <div class="project-card-content">
-              <span class="project-category">CAD/BIM Quantity Surveying</span>
-              
-              <!-- High-fidelity Isometric CAD SVG Visual Showcase -->
-              <div class="project-visual">
-                <svg class="project-svg cad-svg" viewBox="0 0 240 120" width="100%" height="120" xmlns="http://www.w3.org/2000/svg">
-                  <!-- Isometric Grid Background -->
-                  <g stroke="rgba(255, 255, 255, 0.04)" stroke-width="1">
-                    <line x1="20" y1="20" x2="220" y2="120" />
-                    <line x1="20" y1="50" x2="160" y2="120" />
-                    <line x1="20" y1="80" x2="100" y2="120" />
-                    <line x1="80" y1="0" x2="220" y2="70" />
-                    <line x1="140" y1="0" x2="220" y2="40" />
-                    <line x1="220" y1="20" x2="20" y2="120" />
-                    <line x1="220" y1="50" x2="80" y2="120" />
-                    <line x1="220" y1="80" x2="140" y2="120" />
-                    <line x1="160" y1="0" x2="20" y2="70" />
-                    <line x1="100" y1="0" x2="20" y2="40" />
-                  </g>
-
-                  <!-- Block 3 (Base Right, drawn behind) -->
-                  <g class="cad-block block-right">
-                    <polygon points="145,90 125,80 125,50 145,60" fill="rgba(79, 172, 254, 0.08)" stroke="var(--accent-blue)" stroke-width="1.2" />
-                    <polygon points="145,90 175,75 175,45 145,60" fill="rgba(79, 172, 254, 0.12)" stroke="var(--accent-blue)" stroke-width="1.2" />
-                    <polygon points="145,60 125,50 145,40 175,45" fill="rgba(79, 172, 254, 0.15)" stroke="var(--accent-blue)" stroke-width="1.2" />
-                  </g>
-
-                  <!-- Block 1 (Base Left, drawn in front of Block 3) -->
-                  <g class="cad-block block-left">
-                    <polygon points="100,100 70,85 70,55 100,70" fill="rgba(0, 242, 254, 0.08)" stroke="var(--accent-cyan)" stroke-width="1.2" />
-                    <polygon points="100,100 130,85 130,55 100,70" fill="rgba(0, 242, 254, 0.12)" stroke="var(--accent-cyan)" stroke-width="1.2" />
-                    <polygon points="100,70 70,55 100,40 130,55" fill="rgba(0, 242, 254, 0.15)" stroke="var(--accent-cyan)" stroke-width="1.2" />
-                  </g>
-
-                  <!-- Block 2 (Stacked on Block 1) -->
-                  <g class="cad-block block-top">
-                    <polygon points="100,70 80,60 80,40 100,50" fill="rgba(121, 40, 202, 0.08)" stroke="var(--accent-purple)" stroke-width="1.2" />
-                    <polygon points="100,70 120,60 120,40 100,50" fill="rgba(121, 40, 202, 0.12)" stroke="var(--accent-purple)" stroke-width="1.2" />
-                    <polygon points="100,50 80,40 100,30 120,40" fill="rgba(121, 40, 202, 0.15)" stroke="var(--accent-purple)" stroke-width="1.2" />
-                  </g>
-                </svg>
-              </div>
-
-              <h3 class="project-card-title">MetradosPro</h3>
-              <p class="project-card-description">
-                Quantity takeoff CAD engine constructing structured isometric quantity surveying modules directly from BIM spatial layouts.
-              </p>
-              <div class="project-tags">
-                <span>C++20</span>
-                <span>OpenGL</span>
-                <span>CAD</span>
-                <span>BIM</span>
-              </div>
-            </div>
-          </div>
+          <article class="project-card">
+            <h3>MetradosPro</h3>
+            <p>Quantity takeoff CAD engine for construction surveying. Parses BIM spatial layouts into structured isometric quantity modules.</p>
+            <ul class="project-tags">
+              <li>C++20</li>
+              <li>OpenGL</li>
+              <li>CAD</li>
+              <li>BIM</li>
+            </ul>
+          </article>
 
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
+    <section id="contact" aria-label="Contact">
       <div class="container">
-        <div class="contact-box glass-panel">
-          <h2 class="section-title"><span class="gradient-text">Let's Collaborate</span></h2>
-          <p class="contact-subtitle">
-            Have an exciting project or want to learn more about my work? Feel free to reach out directly.
-          </p>
+        <div class="contact-card">
+          <h2>Get in Touch</h2>
+          <p>Have a project in mind or just want to say hello? Reach out — I'd love to hear from you.</p>
           <div class="contact-actions">
-            <a href="mailto:alex@example.com" class="btn btn-primary">Send Email</a>
+            <a href="mailto:biggz@example.com" class="btn btn-primary">Send Email</a>
             <div class="social-links">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                  <path d="M9 18c-4.51 2-5-2-7-2"/>
+                </svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                  <rect width="4" height="12" x="2" y="9"/>
+                  <circle cx="4" cy="4" r="2"/>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-  </div>
+  </main>
 
-  <!-- Floating Bottom macOS-style Dock Navigation -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 BiggZ. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Dock Navigation — glass-only element -->
   <nav class="dock" aria-label="Main Navigation">
     <div class="dock-container">
-      <a href="#hero" class="dock-item active" data-section="hero">
+      <a href="#hero" class="dock-item active" data-section="hero" aria-label="Home">
         <svg class="dock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
           <polyline points="9 22 9 12 15 12 15 22"/>
         </svg>
         <span class="dock-tooltip">Home</span>
       </a>
-      <a href="#about" class="dock-item" data-section="about">
+      <a href="#about" class="dock-item" data-section="about" aria-label="About">
         <svg class="dock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
           <circle cx="12" cy="7" r="4"/>
         </svg>
         <span class="dock-tooltip">About</span>
       </a>
-      <a href="#projects" class="dock-item" data-section="projects">
+      <a href="#projects" class="dock-item" data-section="projects" aria-label="Projects">
         <svg class="dock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <rect width="18" height="18" x="3" y="3" rx="2" ry="2"/>
           <line x1="9" x2="15" y1="9" y2="9"/>
@@ -378,7 +161,7 @@
         </svg>
         <span class="dock-tooltip">Projects</span>
       </a>
-      <a href="#contact" class="dock-item" data-section="contact">
+      <a href="#contact" class="dock-item" data-section="contact" aria-label="Contact">
         <svg class="dock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <rect width="20" height="16" x="2" y="4" rx="2"/>
           <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
@@ -387,11 +170,6 @@
       </a>
     </div>
   </nav>
-
-  <!-- Custom Cursor -->
-  <div class="custom-cursor"></div>
-
-  <!-- Script entry point -->
 
 </body>
 </html>
