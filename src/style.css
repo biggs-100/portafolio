@@ -509,8 +509,127 @@ footer p {
 }
 
 /* --------------------------------------------------------------------------
-   12. RESPONSIVE BREAKPOINTS
-   -------------------------------------------------------------------------- */
+    12. DEPTH & ATMOSPHERE — Rule 9: intentional depth
+    -------------------------------------------------------------------------- */
+
+/* 12a. Background grid texture — subtle tech blueprint */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(59, 130, 246, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.035) 1px, transparent 1px);
+  background-size: 64px 64px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* 12b. Hero ambient glow — radial gradient spotlight */
+#hero {
+  position: relative;
+  overflow: hidden;
+}
+
+#hero::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  left: -10%;
+  width: 120%;
+  height: 150%;
+  background: radial-gradient(ellipse at 30% 45%, rgba(59, 130, 246, 0.1) 0%, rgba(6, 182, 212, 0.04) 40%, transparent 65%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* 12c. Section reveal animation — fade + slide up on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 12d. Staggered children reveal — for grids and lists */
+.reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-stagger.visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-stagger.visible > *:nth-child(1) { transition-delay: 0.00s; }
+.reveal-stagger.visible > *:nth-child(2) { transition-delay: 0.06s; }
+.reveal-stagger.visible > *:nth-child(3) { transition-delay: 0.12s; }
+.reveal-stagger.visible > *:nth-child(4) { transition-delay: 0.18s; }
+.reveal-stagger.visible > *:nth-child(5) { transition-delay: 0.24s; }
+.reveal-stagger.visible > *:nth-child(6) { transition-delay: 0.30s; }
+.reveal-stagger.visible > *:nth-child(7) { transition-delay: 0.36s; }
+.reveal-stagger.visible > *:nth-child(8) { transition-delay: 0.42s; }
+.reveal-stagger.visible > *:nth-child(9) { transition-delay: 0.48s; }
+
+/* 12e. Improved project card hover — top accent border + glow */
+.project-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-emphasis));
+  border-radius: 16px 16px 0 0;
+  transition: height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-card:hover::before {
+  height: 3px;
+}
+
+.project-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: 0 12px 40px rgba(59, 130, 246, 0.12),
+              0 0 60px rgba(59, 130, 246, 0.06);
+}
+
+/* 12f. Social link glow on hover */
+.social-link:hover {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+}
+
+/* 12g. Skill tag entrance — already staggered via reveal-stagger */
+.skill-tag {
+  transition: border-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+}
+
+/* --------------------------------------------------------------------------
+    13. RESPONSIVE BREAKPOINTS
+    -------------------------------------------------------------------------- */
 
 /* Tablet: 640px – 1024px */
 @media (max-width: 1024px) {

@@ -1,10 +1,24 @@
-// src/main.js — Vanilla JS only, ~25 lines
+// src/main.js — Vanilla JS only, ~40 lines
 
-// Dock scrollspy with IntersectionObserver
+// 1. Section reveal on scroll
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal, .reveal-stagger').forEach((el) => {
+  revealObserver.observe(el);
+});
+
+// 2. Dock scrollspy with IntersectionObserver
 const sections = document.querySelectorAll('section[id]');
 const dockItems = document.querySelectorAll('.dock-item');
 
-const observer = new IntersectionObserver((entries) => {
+const spyObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       dockItems.forEach((item) => item.classList.remove('active'));
@@ -16,9 +30,9 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.3 });
 
-sections.forEach((section) => observer.observe(section));
+sections.forEach((section) => spyObserver.observe(section));
 
-// Dock click smooth scroll
+// 3. Dock click smooth scroll
 dockItems.forEach((item) => {
   item.addEventListener('click', (e) => {
     e.preventDefault();
