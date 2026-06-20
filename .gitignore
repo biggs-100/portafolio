@@ -3,3 +3,4 @@ dist
 .engram
 .DS_Store
 *.local
+.atl/*.cache.json
